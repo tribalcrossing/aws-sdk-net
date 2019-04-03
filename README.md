@@ -9,6 +9,9 @@ The **AWS SDK for .NET** enables .NET developers to easily work with [Amazon Web
 * [GitHub Issues][sdk-issues]
 * [SDK Samples](https://github.com/awslabs/aws-sdk-net-samples)
 
+## Why the Fork?
+The Unity version of the AWS SDK is frequently outdated. We chose to fork aws-sdk-net to set up support for CognitoAuthentication via Amazon.Extensions.CognitoAuthentication. We found it impossible to add the extensions on top of the standard AWSSDK for unity. We followed the work outlined here: http://www.gradientspace.com/tutorials/2018/1/25/using-aws-cognito-user-accounts-with-unity in developing this version; however, it should be noted that more than a year separates that implementation and this one, so the details differ.
+
 ## Getting Help
 
 Please use these community resources for getting help. We use the [GitHub issues][sdk-issues] for tracking bugs and feature requests and have limited bandwidth to address them.
