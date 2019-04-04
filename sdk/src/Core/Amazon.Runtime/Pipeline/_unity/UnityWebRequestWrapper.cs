@@ -90,6 +90,11 @@ namespace Amazon.Runtime.Internal
                 throw new InvalidOperationException("UnityWebRequest is not supported in the current version of unity");
 
             unityWebRequestInstance = Activator.CreateInstance(unityWebRequestType);
+
+
+            // [RMS][copied by AH] disable chunked transfer
+            // from https://github.com/aws/aws-sdk-net/issues/835
+            unityWebRequestType.GetProperty("chunkedTransfer").GetSetMethod().Invoke(unityWebRequestInstance, new object[] { false });
         }
 
         /// <summary>
@@ -187,6 +192,25 @@ namespace Amazon.Runtime.Internal
         /// <returns></returns>
         public AsyncOperation Send()
         {
+            // [RMS][copied by AH] from https://github.com/VISUAL-VOCAL/aws-sdk-net, 
+            // Force disable chunked transfers Work around this bug:
+            // https://github.com/aws/aws-sdk-net/issues/820
+            // 
+            // Also discussed at here:
+            // https://answers.unity.com/questions/1450373/set-content-length-header-for-unitywebrequest-post.html
+            // https://github.com/aws/aws-sdk-net/issues/835
+            // 
+            // Might be related:
+            // https://github.com/aws/aws-cli/issues/602
+            if (unityWebRequestInstance is UnityEngine.Networking.UnityWebRequest)
+            {
+                var request = unityWebRequestInstance as UnityEngine.Networking.UnityWebRequest;
+                if (request.method == UnityEngine.Networking.UnityWebRequest.kHttpVerbPUT)
+                {
+                    request.chunkedTransfer = false;
+                }
+            }
+
             return (AsyncOperation)sendMethod.Invoke(unityWebRequestInstance, null);
         }
 
