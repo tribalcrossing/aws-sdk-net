@@ -283,11 +283,20 @@ namespace ServiceClientGenerator.Generators.ProjectFiles
             
             #line default
             #line hidden
+            this.Write("</HintPath>\r\n    </Reference>\r\n\t    <Reference Include=\"UnityEngine.UnityWebReque" +
+                    "stModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL\">\r\n      " +
+                    "<HintPath>");
+            
+            #line 111 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Path.Combine(this.Project.UnityPath, "Editor", "Data", "PlaybackEngines", "windowsstandalonesupport", "Managed", "UnityEngine.UnityWebRequestModule.dll")));
+            
+            #line default
+            #line hidden
             this.Write("</HintPath>\r\n    </Reference>\r\n    <Reference Include=\"UnityEngine.UnityWebReques" +
                     "tWWWModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL\">\r\n    " +
                     "  <HintPath>");
             
-            #line 111 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
+            #line 114 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Path.Combine(this.Project.UnityPath, "Editor", "Data", "PlaybackEngines", "windowsstandalonesupport", "Managed", "UnityEngine.UnityWebRequestWWWModule.dll")));
             
             #line default
@@ -295,7 +304,7 @@ namespace ServiceClientGenerator.Generators.ProjectFiles
             this.Write("</HintPath>\r\n    </Reference>\r\n    <Reference Include=\"System.Runtime.Serializati" +
                     "on\" />\r\n    <Reference Include=\"System.Xml.Linq\" />\r\n");
             
-            #line 115 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
+            #line 118 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
 
 	if(this.Project.ReferenceDependencies != null)
     {
@@ -307,21 +316,21 @@ namespace ServiceClientGenerator.Generators.ProjectFiles
             #line hidden
             this.Write("    <Reference Include=\"");
             
-            #line 121 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
+            #line 124 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(dependency.Name));
             
             #line default
             #line hidden
             this.Write("\">\r\n      <HintPath>");
             
-            #line 122 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
+            #line 125 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Path.Combine(this.Project.UnityPath, dependency.HintPath)));
             
             #line default
             #line hidden
             this.Write("</HintPath>\r\n      <Private>True</Private>\r\n    </Reference>\r\n");
             
-            #line 125 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
+            #line 128 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
    
 		}
 	}
@@ -331,7 +340,7 @@ namespace ServiceClientGenerator.Generators.ProjectFiles
             #line hidden
             this.Write("  </ItemGroup>\r\n  <ItemGroup>\r\n");
             
-            #line 131 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
+            #line 134 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
 
     foreach(string subDirectory in this.Project.SourceDirectories)
     {
@@ -341,14 +350,14 @@ namespace ServiceClientGenerator.Generators.ProjectFiles
             #line hidden
             this.Write("    <Compile Include=\"");
             
-            #line 135 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
+            #line 138 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(subDirectory));
             
             #line default
             #line hidden
             this.Write("\\*.cs\">\r\n      <SubType>Code</SubType>\r\n    </Compile>\r\n");
             
-            #line 138 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
+            #line 141 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
 
     }
 
@@ -357,7 +366,7 @@ namespace ServiceClientGenerator.Generators.ProjectFiles
             #line hidden
             this.Write("  </ItemGroup>\r\n  <ItemGroup>\r\n");
             
-            #line 143 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
+            #line 146 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
 
     if(this.Project.IndividualFileIncludes != null)
     {
@@ -371,14 +380,14 @@ namespace ServiceClientGenerator.Generators.ProjectFiles
             #line hidden
             this.Write("    <Compile Include=\"");
             
-            #line 151 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
+            #line 154 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(file));
             
             #line default
             #line hidden
             this.Write("\">\r\n      <SubType>Code</SubType>\r\n    </Compile>\r\n");
             
-            #line 154 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
+            #line 157 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
 
             }
             else
@@ -389,14 +398,14 @@ namespace ServiceClientGenerator.Generators.ProjectFiles
             #line hidden
             this.Write("    <EmbeddedResource Include=\"");
             
-            #line 159 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
+            #line 162 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(file));
             
             #line default
             #line hidden
             this.Write("\">\r\n      <SubType>Designer</SubType>\r\n    </EmbeddedResource>\r\n");
             
-            #line 162 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
+            #line 165 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
 
             }
         }
@@ -407,7 +416,7 @@ namespace ServiceClientGenerator.Generators.ProjectFiles
             #line hidden
             this.Write("  </ItemGroup>\r\n");
             
-            #line 168 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
+            #line 171 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
 
     if(this.Project.ProjectReferences != null)
     {
@@ -419,28 +428,28 @@ namespace ServiceClientGenerator.Generators.ProjectFiles
             #line hidden
             this.Write("  <ItemGroup>\r\n    <ProjectReference Include=\"");
             
-            #line 175 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
+            #line 178 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(projectReferences.IncludePath));
             
             #line default
             #line hidden
             this.Write("\">\r\n        <Project>");
             
-            #line 176 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
+            #line 179 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(projectReferences.ProjectGuid));
             
             #line default
             #line hidden
             this.Write("</Project>\r\n        <Name>");
             
-            #line 177 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
+            #line 180 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(projectReferences.Name));
             
             #line default
             #line hidden
             this.Write("</Name>\r\n    </ProjectReference>\r\n  </ItemGroup>\r\n");
             
-            #line 180 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
+            #line 183 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
 
         }
     }
@@ -467,7 +476,7 @@ namespace ServiceClientGenerator.Generators.ProjectFiles
             return this.GenerationEnvironment.ToString();
         }
         
-        #line 199 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
+        #line 202 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
 
 	public Project Project { get; set; }
 
