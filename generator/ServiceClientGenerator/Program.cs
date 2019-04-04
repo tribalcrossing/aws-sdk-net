@@ -109,7 +109,6 @@ namespace ServiceClientGenerator
                     returnCode = -1;
                 }
                 else
-
                     throw;
             }
 

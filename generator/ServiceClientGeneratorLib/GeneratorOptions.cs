@@ -105,7 +105,7 @@ namespace ServiceClientGenerator
             SamplesRootFolder = Path.Combine("..", "..", "..", "..", "aws-sdk-net-samples");
 
             //TODO: fix for OSX environments
-            UnityPath = Path.Combine("C:\\", "Program Files", "Unity");
+            UnityPath = Path.Combine("C:\\", "Program Files", "Unity", "Hub", "Editor", "2018.1.9f2");
 
             ServiceModels = string.Empty; // process all services
             CompileCustomizations = true;
