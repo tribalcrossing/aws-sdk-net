@@ -72,6 +72,9 @@
     <Reference Include="UnityEngine.WebModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2018.1.9f2\Editor\Data\PlaybackEngines\windowsstandalonesupport\Managed\UnityEngine.WebModule.dll</HintPath>
     </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.1.9f2\Editor\Data\PlaybackEngines\windowsstandalonesupport\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UnityWebRequestWWWModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2018.1.9f2\Editor\Data\PlaybackEngines\windowsstandalonesupport\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
     </Reference>
