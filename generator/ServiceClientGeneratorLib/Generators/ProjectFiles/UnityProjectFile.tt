@@ -97,7 +97,7 @@
     <Reference Include="System" />
     <Reference Include="System.XML" />
     <Reference Include="System.Core" />
-	 <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+	<Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath><#=Path.Combine(this.Project.UnityPath, "Editor", "Data", "PlaybackEngines", "windowsstandalonesupport", "Managed", "UnityEngine.CoreModule.dll")#></HintPath>
     </Reference>
     <Reference Include="UnityEngine.WebModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">

@@ -258,7 +258,7 @@ namespace ServiceClientGenerator.Generators.ProjectFiles
     <Reference Include=""System"" />
     <Reference Include=""System.XML"" />
     <Reference Include=""System.Core"" />
-	 <Reference Include=""UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL"">
+	<Reference Include=""UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL"">
       <HintPath>");
             
             #line 101 "D:\Repos\aws-sdk-net\generator\ServiceClientGeneratorLib\Generators\ProjectFiles\UnityProjectFile.tt"
