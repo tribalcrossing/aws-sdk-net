@@ -62,7 +62,7 @@
     <Reference Include="System" />
     <Reference Include="System.XML" />
     <Reference Include="System.Core" />
-     <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2018.1.9f2\Editor\Data\PlaybackEngines\windowsstandalonesupport\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.WebModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -77,11 +77,11 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.1.9f2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1\System.Data.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.1.9f2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Data.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Mono.Data.SQLite">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.1.9f2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1\Mono.Data.SQLite.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.1.9f2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Mono.Data.SQLite.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
