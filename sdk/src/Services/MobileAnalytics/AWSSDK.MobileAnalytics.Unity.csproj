@@ -62,10 +62,6 @@
     <Reference Include="System" />
     <Reference Include="System.XML" />
     <Reference Include="System.Core" />
-    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-    <!-- create the path of reference UnityEngine for Unity projects  -->
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.1.9f2\Editor\Data\Managed\UnityEngine.dll</HintPath>
-    </Reference>
      <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2018.1.9f2\Editor\Data\PlaybackEngines\windowsstandalonesupport\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
